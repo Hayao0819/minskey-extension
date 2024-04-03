@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  webext-storage:
+    specifier: ^1.2.2
+    version: 1.2.2
+
 devDependencies:
   '@crxjs/vite-plugin':
     specifier: 2.0.0-beta.23
@@ -2235,6 +2240,17 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /webext-polyfill-kinda@1.0.2:
+    resolution: {integrity: sha512-rqQUKeBTOicej0tjDJWDQlOTnDcm9yYJTzgI+7rMdyYV4QHmYMRm+yjkcVgECkg/Wu9MboZ4lYeBPdp1Ep9WgQ==}
+    dev: false
+
+  /webext-storage@1.2.2:
+    resolution: {integrity: sha512-544gs8/iyoXR+mR/rJpt+Pkl3h1SgrLBOvNWr2uu7VPtRrhiHZWGH4Po9GAKtswN0RBSsx2tRKnBtxFskBILgw==}
+    engines: {node: '>=20'}
+    dependencies:
+      webext-polyfill-kinda: 1.0.2
+    dev: false
 
   /which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
